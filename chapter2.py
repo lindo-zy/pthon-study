@@ -111,9 +111,78 @@ str.index(str, beg=0, end=len(string))
 如果包含子字符串返回索引值，否则抛出异常
 
 '''
-a='www.abcabc.com'
-str='abc'
-print(a.find(str)) # 4
-print(a.find(str,6)) #7
-print(a.find(str,1,4))#-1
+a = 'www.abcabc.com'
+str = 'abc'
+print(a.find(str))  # 4
+print(a.find(str, 6))  # 7
+print(a.find(str, 1, 4))  # -1
 
+'''
+str.join(sequence)
+sequence为要连接的序列
+'''
+a = "-"
+seq = ('a', 'b', 'c')
+print(a.join(seq))  # a-b-c
+
+'''
+len(string)  
+返回字符串长度
+'''
+a = 'abc'
+print(len(a))  # 长度为3
+
+'''
+lower()
+将字符串中全部大写转换为小写
+upper()
+将字符串中全部小写转换为大写
+'''
+a = 'ABC'
+print(a.lower())  # abc
+b = 'abc'
+print(b.upper())  # ABC
+
+'''
+max(str)
+返回字符串中最大的字母
+min(str)
+返回字符串中最小的字母
+'''
+a = 'abc'
+print(max(a))  # c
+print(min(a))  # a
+
+'''
+str.split(str="", num=string.count(str))
+str -- 分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。
+num -- 分割次数。
+'''
+a = 'hello world'
+print(a.split())  # 返回列表 ['hello', 'world']
+print(a.split('e'))  # ['h', 'llo world']
+print(a.split('o', 2))  # ['hell', ' w', 'rld']
+
+'''
+str.strip([chars])
+chars是移除字符串头尾指定的字符串
+str.rstrip([chars])
+移除尾部指定的字符串
+'''
+a = "*****hello world*****"
+print(a.strip('*'))  # hello world
+print(a.rstrip('*'))  # *****hello world
+
+'''
+str.title()
+首字母大写，其余小写
+'''
+a = 'hello world'
+print(a.title())  # Hello World
+
+'''
+str.swapcase()
+大写变小写，小写变大写
+'''
+a = 'aBc'
+print(a.swapcase())  # AbC
