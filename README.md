@@ -1,4 +1,4 @@
 # pthon-study
-我的python学习库 
-my python study 
-
+python基础学习
+<br>参照菜鸟教程 
+http://www.runoob.com/python3
